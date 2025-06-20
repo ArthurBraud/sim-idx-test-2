@@ -28,6 +28,6 @@ contract Listener is UniswapV3Factory$function_OnPostCreatePool, ListenerDsl {
         external
         override
     {
-        emit PoolCreated(ctx.txn.call.callee, outputs.pool, inputs.tokenA, inputs.tokenB, inputs.fee + 3);
+        emit PoolCreated(ctx.txn.call.callee, outputs.pool, inputs.tokenA, inputs.tokenB, inputs.fee + 4);
     }
 }
